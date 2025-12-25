@@ -1,0 +1,4 @@
+com\example\hedera\Config.class
+com\example\hedera\HcsSendMessages.class
+com\example\hedera\HcsCreateTopic.class
+com\example\hedera\HcsReceiveMessages.class
