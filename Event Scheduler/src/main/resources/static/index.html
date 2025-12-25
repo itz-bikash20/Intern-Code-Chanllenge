@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Scheduler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Scheduler</h1>
+        <div class="working-hours">
+            <label for="workingHours">Set Working Hours (HH:MM - HH:MM):</label>
+            <input type="text" id="workingHours" placeholder="09:00 - 17:00">
+            <button id="setHours">Set Hours</button>
+        </div>
+        <div class="event-list">
+            <h2>Scheduled Events</h2>
+            <ul id="eventList">
+                <!-- Events will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="add-event">
+            <h2>Add Event</h2>
+            <input type="text" id="eventName" placeholder="Event Name">
+            <input type="text" id="startTime" placeholder="Start Time (HH:MM)">
+            <input type="text" id="endTime" placeholder="End Time (HH:MM)">
+            <button id="addEvent">Add Event</button>
+        </div>
+    </div>
+    <div id="conflictResolution" style="display:none;">
+        <h2>Conflict Detected!</h2>
+        <p id="conflictMessage"></p>
+        <button id="resolveConflict">Resolve Conflict</button>
+    </div>
+</body>
+</html>
